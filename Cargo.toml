@@ -1,0 +1,15 @@
+[package]
+name = "interface-stats-logger"
+version = "0.1.0"
+authors = ["ssnover95 <ssnover95@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = {version = "0.2.6", features = ["macros", "rt-core"] }
+futures = "0.3.1"
+rtnetlink = "0.2.0"
+netlink-packet-utils = "0.1.0"
+rusqlite = { version = "0.21.0", features = ["bundled"] }
+signal-hook = "0.1.13"
+libc = "0.2.67"
+daemonize = "0.4.1"
